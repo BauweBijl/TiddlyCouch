@@ -1,8 +1,7 @@
 /***
 !Tiddlycouch logged in/out 
 This tiddlyCouch plugin can be used to implement a login/logout behavior in the current file
-The user must be defined in the couchDb server first
-Unclephil 201106
+The user must be defined in the couchDb server first with username and password
 !CouchDB logged in/out Options
 !!Logged in behavior
 <<option txtCouchLoginTheme>> Logged in theme
@@ -24,7 +23,7 @@ if (config.options.chkCouchLoginShowBackstage==undefined)
   config.options.chkCouchLoginShowBackstage=true;
 if (config.options.txtCouchLogoutTheme==undefined)
   config.options.txtCouchLogoutTheme='';
-if (config.options.chkCouchLogouReadOnly==undefined)
+if (config.options.chkCouchLogoutReadOnly==undefined)
   config.options.chkCouchLogoutReadOnly=true;
 if (config.options.chkCouchLogoutShowBackstage==undefined)
   config.options.chkCouchLogoutShowBackstage=false;

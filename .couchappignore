@@ -1,5 +1,5 @@
 [
-	"deploy.cmd",
+	"deploy.sh",
 	"plugins",
 	"js2tiddler",
 	"fixtures",

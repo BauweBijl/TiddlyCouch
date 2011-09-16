@@ -1,7 +1,7 @@
 {
 	"env": {
 		"default": {
-			"db": "http://unclephil.couchone.com"
+			"db": "http://bijl.iriscouch.com"
 		}
 	}
 }

@@ -32,7 +32,7 @@ The specific nature of this plugin depends on the respective server.
 ***/
 //{{{
 (function($) {
-readOnly = false; //# enable editing over HTTP
+//readOnly = false; //# enable editing over HTTP
 var plugin = config.extensions.ServerSideSavingPlugin = {};
 plugin.locale = {
 	saved: "%0 saved successfully",
@@ -171,17 +171,18 @@ var _onOpen = config.macros.importTiddlers.onOpen;
 config.macros.importTiddlers.onOpen = function(ev) {
 	var btn = $(resolveTarget(ev));
 	var url = btn.closest(".wizard").find("input[name=txtPath]").val();
-	if(window.location.protocol != "file:" && url.indexOf("://") != -1) {
-		var host = url.split("/")[2];
-		var macro = config.macros.importTiddlers;
-		if(host != window.location.host) {
-			btn.text(macro.cancelLabel).attr("title", macro.cancelPrompt);
-			btn[0].onclick = macro.onCancel;
-			$('<span class="status" />').text(plugin.locale.hostError).insertAfter(btn);
-			return false;
-		}
-	}
+//	if(window.location.protocol != "file:" && url.indexOf("://") != -1) {
+//		var host = url.split("/")[2];
+//		var macro = config.macros.importTiddlers;
+//		if(host != window.location.host) {
+//			btn.text(macro.cancelLabel).attr("title", macro.cancelPrompt);
+//			btn[0].onclick = macro.onCancel;
+//			$('<span class="status" />').text(plugin.locale.hostError).insertAfter(btn);
+//			return false;
+//		}
+//	}
 	return _onOpen.apply(this, arguments);
 };
 })(jQuery);
 //}}}
+

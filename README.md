@@ -9,6 +9,7 @@ This TiddlyCouch version is created by Bauwe Bijl
 * Linux version of deploy.sh
 * fixture magic : temporary creation of fixtures folder
 * minor fixes
+* AtomFeed (containing tiddlers tagged “content”)
 
 [Working Version Bauwe Bijl](http://bijl.iriscouch.com/bijl-ctw/_design/tiddlycouch/index.html)
 

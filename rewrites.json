@@ -4,7 +4,11 @@
     "to" : "_list/tiddlywiki/tiddlers"
   },
   {
+     "from": "feed.atom",
+     "to": "_list/feed/atom"
+  },
+  {
        "from": "*",
        "to": "*"
-   }
+  }
 ]

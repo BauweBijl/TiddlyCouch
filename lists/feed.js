@@ -4,8 +4,8 @@ function(head, req) {
   var Atom = require("vendor/couchapp/lib/atom");
   var Mustache = require("vendor/couchapp/lib/mustache");
 
-  var indexPath = path.list('tiddlywiki','tiddlers',{descending:true, limit:10});
-  var feedPath = path.list('tiddlywiki','tiddlers',{descending:true, limit:10});
+  var indexPath = path.list('tiddlywiki','tiddlers');
+  var feedPath = path.list('tiddlywiki','tiddlers');
 
   // we load the first row to find the most recent change date
   var row = getRow();
